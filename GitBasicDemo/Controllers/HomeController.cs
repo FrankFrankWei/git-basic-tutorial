@@ -26,5 +26,10 @@ namespace GitBasicDemo.Controllers
 
             return View();
         }
+
+        public ActionResult ShowTime()
+        {
+            return Content(DateTime.Now.ToShortDateString());
+        }
     }
 }
