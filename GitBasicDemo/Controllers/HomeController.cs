@@ -8,6 +8,11 @@ namespace GitBasicDemo.Controllers
 {
     public class HomeController : Controller
     {
+        public ActionResult Hello()
+        {
+            return Content("hello world.");
+        }
+
         public ActionResult Index()
         {
             return View();
